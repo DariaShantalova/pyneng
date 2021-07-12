@@ -9,7 +9,7 @@ def get_ip_from_cfg(file):
 
         match = re.search(r'ip address (\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}[^0-9])(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}[^0-9])', el)
 
-        if match != None:
+        if match:
             ipaddress = match.group(1).split(' ')[0]
             mask = match.group(2).split('\n')[0]
             if interface in result.keys():
