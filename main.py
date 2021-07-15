@@ -20,10 +20,12 @@ def get_ip_from_cfg(file):
                 else:
                     result[interface] = (ipaddress, mask)
     return result
+def parse_sh_ip_int_br(file):
+
 
 
 if __name__ == '__main__':
-    result = get_ip_from_cfg('/Users/dariashantalova/PycharmProjects/pyneng/venv/exercises/config_r2.txt')
+    result = get_ip_from_cfg('/Users/dariashantalova/PycharmProjects/pyneng/venv/exercises/config_r1.txt')
     print(result)
 
 
